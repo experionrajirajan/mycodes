@@ -1,0 +1,28 @@
+<div class="col-md-12">
+	<div class="col-md-3 single-product" *ngFor="let item of productsdetails">
+		<a href="#">
+			<div class="thumb-wrapper">
+				<img class="img-thumbnail product-img" [src]="item.image">
+
+			</div>
+
+			<div class="product-info">
+				<h4 class="h4">
+					{{item.productname}}
+				</h4>
+
+				<h5>
+					{{item.productdesc}}
+				</h5>
+			</div>
+
+
+		</a>		
+  		<a (click)="addtocart()" (input)=0>Add to cart</a>	
+
+
+	</div>
+</div>
+        <!--<input type="text" class="counter__input" [value]="cartno">-->
+
+<p>thhe cart {{cartno}}</p>
